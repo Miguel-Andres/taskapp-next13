@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from "next/navigation"
 import { UseTasks } from "@/context/TasksContext"
+import { toast } from "react-hot-toast"
 
 export default function TaskCard({task}) {
 
@@ -14,7 +15,9 @@ export default function TaskCard({task}) {
         <button onClick={ (e)=>{         
             e.stopPropagation()
             const confirm = window.confirm('are you sure?')
-            if(confirm) deleteTask(task.id) ;        
+            if(confirm) {
+              deleteTask(task.id)
+            toast.success('DELETE')} ;        
           }} 
           >
             Delete
