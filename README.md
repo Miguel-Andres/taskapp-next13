@@ -1,4 +1,4 @@
-# Project Title
+# TASK APP NEXT 13 ( experimental feature)
 
 This is a task management application developed with Next.js 13 and Context API, which allows users to create, edit, and delete tasks via their respective routes. Additionally, the React Hot Toast and React Form libraries have been integrated to provide a better user experience. Styling has been implemented with Tailwind CSS, and LocalStorage has been used to store the tasks.
 
